@@ -26,9 +26,10 @@ Configuration: Open the config.js file and specify:
 - *cron* - when the cron job is executed (see https://www.npmjs.com/package/node-cron)
 ```
 let config = {
-    page_url: 'YOUR_PAGE_URL',
+    page_url: 'PAGE_URL',
     dir: 'savedData',
-    name: 'FILE_NAME_BASIC'
+    name: 'FILE_NAME_BASIC',
+    cron: 'CRON_CONDITION {example: * * * * *}'
 };
 ```
 
