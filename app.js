@@ -6,8 +6,8 @@ const app = express();
 /** config */
 const config = require('./config');
 
-/** run cron job every minute */
-cron.schedule('* * * * *', () => {
+/** run cron job twice a day */
+cron.schedule(config.cron, () => {
     save(config.page_url, config.name, config.dir).then(paths => {
         console.log(`🟢 Saved files: ${paths}`)
     })

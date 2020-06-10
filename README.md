@@ -4,7 +4,7 @@
 Every minute the cron job is executed and the website is saved in pdf format.
 
 ## NPM Packages
-- pupeteer (for web scraping) 
+- puppeteer (for web scraping) 
 - express (for server)
 - node-cron (for cron jobs)
 
@@ -21,8 +21,9 @@ $ npm install
 ```
 
 Configuration: Open the config.js file and specify:
-- the url of the website you want to save
-- the name of the file
+- *page_url* - the url of the website you want to save
+- *name* - the name of the file
+- *cron* - when the cron job is executed (see https://www.npmjs.com/package/node-cron)
 ```
 let config = {
     page_url: 'YOUR_PAGE_URL',
