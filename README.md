@@ -24,7 +24,7 @@ Configuration: Open the config.js file and specify:
 - *page_url* - the url of the website you want to save
 - *name* - the name of the file
 - *cron* - when the cron job is executed (see https://www.npmjs.com/package/node-cron)
-```
+```json
 const config = {
     page_url: 'PAGE_URL',
     dir: 'savedData',
