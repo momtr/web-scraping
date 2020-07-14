@@ -13,7 +13,4 @@ cron.schedule(config.cron, () => {
     })
 });
 
-const port = process.env.PORT || 3412;
-app.listen(port, () => 
-    console.log(`🚀 started service [on port ${port}]`)
-)
+module.exports = app;
